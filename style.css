@@ -1,7 +1,93 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-</head>
-<body>
-</body>
-<html>
+
+body {
+	background-color: #777;
+	color:#ebebeb;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px; /*I normally would not make all text the same font*/
+	text-align: center;/*or center all text but for this assignment I just want labels*/
+}
+
+#container {
+	margin: 0 auto;/*centers horizontally*/
+	width: 960px;
+}
+
+.header {
+	background-color: white;
+	width: 960px;
+	height: 100px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	line-height: 6;/*This means 6 times font size; same as 600%*/
+}
+
+nav {
+	background-color: white;
+	width: 960px;
+	height: 100px;
+	margin-bottom: 20px;
+	line-height: 6;
+}
+
+/*Note to Self: Margin bottom is used here instead of putting a top margin on the Footer 
+because Section and Aside are floated and floated elements are removed from the normal 
+flow thus giving Footer can't push up against floated elmeents and is trying to push on first
+non-floated element (here, nav).*/
+.section {
+	background-color: white;
+	width: 495px;
+	height: 300px;
+	float:left;
+	margin-bottom: 20px;
+}
+.seclabel {
+	line-height: 1.8;/*instead of line-height could have used padding and 
+					box-sizing: border box (includes padding in height 
+					intead of adding more height to use padding);*/
+}
+
+article {
+	background-color: #777;
+	width: 475px;
+	height: 216px;
+	margin-left: 10px;
+}
+
+.artlabel {
+	padding-top: 16px;
+}
+
+.miniheader {
+	background-color: white;
+	height: 64px;
+	margin-left: 25px;/*Note to self: No need for width because set left and right margins*/
+	margin-right: 25px;
+	line-height: 3.5;
+}
+
+.articlep {
+	background-color: white;
+	height: 64px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 10px;
+	line-height: 3.5;
+}
+
+aside {
+	background-color: white;
+	width: 444px;
+	height: 300px;/*could have used overflow: auto to let browser decide size */
+	float: left;   /*usually makes sure parent large enough to fit children*/
+	margin-left: 20px;
+	margin-bottom: 20px;
+	line-height: 5;
+}
+
+footer {
+	background-color: white;
+	clear: both;
+	width: 960px;
+	height: 100px;
+	line-height: 6;
+}
