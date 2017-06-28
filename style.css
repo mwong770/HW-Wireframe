@@ -31,7 +31,11 @@ nav {
 
 /*Note to Self: Margin bottom is used here instead of putting a top margin on the Footer 
 because Section and Aside are floated and floated elements are removed from the normal 
+<<<<<<< HEAD
 flow, thus Footer can't push up against floated elements and is trying to push on first
+=======
+flow thus giving Footer can't push up against floated elmeents and is trying to push on first
+>>>>>>> 3940b0cc9e4f45e6b1de86eddd2be4ee5dfff992
 non-floated element (here, nav).*/
 .section {
 	background-color: white;
